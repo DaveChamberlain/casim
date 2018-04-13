@@ -121,62 +121,68 @@ public class BootGUI extends AbstractGUI
 		
 		try
 		{
-			FileReader fr=new FileReader("settings.txt");
-			Scanner scan=new Scanner(fr);
-			while(true)
-			{
-				if (!scan.hasNext())
-					break;
-				String type=scan.next();
-				if (type.equals("DiskA"))
-				{
-					diskIncluded[0]=true;
-					diskImage[0]=scan.next();
-				}
-				if (type.equals("DiskB"))
-				{
-					diskIncluded[1]=true;
-					diskImage[1]=scan.next();
-				}
-				if (type.equals("DiskC"))
-				{
-					diskIncluded[2]=true;
-					diskImage[2]=scan.next();
-					isCD[2]=scan.nextInt()==1;
-					cylinders[2]=scan.nextInt();
-					heads[2]=scan.nextInt();
-					sectors[2]=scan.nextInt();
-				}
-				if (type.equals("DiskD"))
-				{
-					diskIncluded[3]=true;
-					diskImage[3]=scan.next();
-					isCD[3]=scan.nextInt()==1;
-					cylinders[3]=scan.nextInt();
-					heads[3]=scan.nextInt();
-					sectors[3]=scan.nextInt();
-				}
-				if (type.equals("ROM"))
-				{
-					romImage=scan.next();
-				}
-				if (type.equals("VideoROM"))
-				{
-					vromImage=scan.next();
-				}
-				if (type.equals("MemoryContents"))
-				{
-					memoryImage=scan.next();
-					memoryImageStart=Integer.parseInt(scan.next(),16);
-				}
-				if (type.equals("CustomProcessor"))
-				{
-					try{
-					datapathxml=scan.next();
-					controlxml=scan.next();
-					}catch(java.util.NoSuchElementException e){}
-				}
-			}
+            if(new File("settings.txt").exists()) {
+                FileReader fr = new FileReader("settings.txt");
+                Scanner scan = new Scanner(fr);
+                while(true)
+                {
+                    if (!scan.hasNext())
+                        break;
+                    String type=scan.next();
+                    if (type.equals("DiskA"))
+                    {
+                        diskIncluded[0]=true;
+                        diskImage[0]=scan.next();
+                    }
+                    if (type.equals("DiskB"))
+                    {
+                        diskIncluded[1]=true;
+                        diskImage[1]=scan.next();
+                    }
+                    if (type.equals("DiskC"))
+                    {
+                        diskIncluded[2]=true;
+                        diskImage[2]=scan.next();
+                        isCD[2]=scan.nextInt()==1;
+                        cylinders[2]=scan.nextInt();
+                        heads[2]=scan.nextInt();
+                        sectors[2]=scan.nextInt();
+                    }
+                    if (type.equals("DiskD"))
+                    {
+                        diskIncluded[3]=true;
+                        diskImage[3]=scan.next();
+                        isCD[3]=scan.nextInt()==1;
+                        cylinders[3]=scan.nextInt();
+                        heads[3]=scan.nextInt();
+                        sectors[3]=scan.nextInt();
+                    }
+                    if (type.equals("ROM"))
+                    {
+                        romImage=scan.next();
+                    }
+                    if (type.equals("VideoROM"))
+                    {
+                        vromImage=scan.next();
+                    }
+                    if (type.equals("MemoryContents"))
+                    {
+                        memoryImage=scan.next();
+                        memoryImageStart=Integer.parseInt(scan.next(),16);
+                    }
+                    if (type.equals("CustomProcessor"))
+                    {
+                        try{
+                            datapathxml=scan.next();
+                            controlxml=scan.next();
+                        }catch(java.util.NoSuchElementException e){}
+                    }
+                }
+            }
+            /*
+            * Scoping issue that needs fixing
+            * */
+
 		}
 		catch(Exception e)
 		{
