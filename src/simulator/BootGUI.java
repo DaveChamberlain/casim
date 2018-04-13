@@ -118,7 +118,7 @@ public class BootGUI extends AbstractGUI
 		memoryImage="";
 		datapathxml="";
 		controlxml="";
-		
+
 		try
 		{
             if(new File("settings.txt").exists()) {
@@ -184,8 +184,9 @@ public class BootGUI extends AbstractGUI
             * */
 
 		}
-		catch(Exception e)
+		catch(java.io.FileNotFoundException e)
 		{
+			System.out.println("File not Found\n");
 			e.printStackTrace();
 		}
 		computer.computerGUI.menubar.setVisible(false);
