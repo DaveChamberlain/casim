@@ -128,7 +128,8 @@ public class BootGUI extends AbstractGUI
                 {
                     if (!scan.hasNext())
                         break;
-                    String type=scan.next();
+                    String type = scan.next();
+
                     if (type.equals("DiskA"))
                     {
                         diskIncluded[0]=true;
@@ -179,15 +180,12 @@ public class BootGUI extends AbstractGUI
                     }
                 }
             }
-            /*
-            * Scoping issue that needs fixing
-            * */
+            //Scoping issue
 
 		}
 		catch(java.io.FileNotFoundException e)
 		{
 			System.out.println("File not Found\n");
-			e.printStackTrace();
 		}
 		computer.computerGUI.menubar.setVisible(false);
 		refresh();
