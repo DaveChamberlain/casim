@@ -687,7 +687,7 @@ public class BootGUI extends AbstractGUI
 				setVisible(false);
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
-				updateCheckBoxes();
+				//updateCheckBoxes();
 
 				computer.stepLock.lockResume();
 			}
@@ -700,7 +700,7 @@ public class BootGUI extends AbstractGUI
 				computer.computerGUI.removeComponent(bootgui);
 				singlestepbox.setSelected(true);
 
-				updateCheckBoxes();
+				//updateCheckBoxes();
 				computer.stepLock.lockResume();
 			}
 			else if (e.getActionCommand().equals("Processor Design"))
