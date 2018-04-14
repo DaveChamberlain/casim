@@ -86,19 +86,40 @@ public class DatapathBuilder extends AbstractGUI
 	JScrollPane toolscroll;
 	public void reSize(int width, int height)
 	{
+		//setCanvasCoordinates(width, height);
+		//setFrameCoordinates(width, height);
+		
 		// This is another place where we may be trying to scroll a pane/window but it 
 		// hasn't yet been fully realized.  So check first.
 		if (toolscroll == null) return;
 		
 		try {
-			toolscroll.setBounds(0,0,toolcomponent.width+20,frameY-STATUSSIZE);
+			Dimension d = guiComponent.getSize();
+			//toolscroll.setBounds(0,0,toolcomponent.width+20,height-STATUSSIZE);
+			guiComponent.setBounds(0, 0, width, height);
+			//guiComponent.invalidate();
+			//guiComponent.repaint();
+			toolscroll.setBounds(0,0,toolcomponent.width+20,height-STATUSSIZE);
+//			toolscroll.setPreferredSize(new Dimension(40,80));
+//			toolscroll.invalidate();
+//			toolscroll.repaint();
 			drawingcomponent.restoreSize();
 	//		drawingcomponent.scroll.setBounds(toolcomponent.width+20,0,frameX-toolcomponent.width-20,frameY-STATUSSIZE);
 			drawingcomponent.scroll.revalidate();
+			//drawingcomponent.invalidate();
+			//drawingcomponent.repaint();
+			//drawingcomponent.scroll.repaint();
+//			toolscroll.invalidate();
+//			toolscroll.repaint();
 		} catch(Exception e) {}
+		
+		revalidate();
+		repaint();
 	}
+	GUIComponent guiComponent;
 	public void constructGUI(GUIComponent guiComponent) 
 	{ 
+		this.guiComponent = guiComponent;
 		toolcomponent=new ToolComponent();
 		toolscroll=new JScrollPane(toolcomponent);
 		toolscroll.setBounds(0,0,toolcomponent.width+20,frameY-STATUSSIZE);
@@ -578,6 +599,7 @@ public class DatapathBuilder extends AbstractGUI
 			public void keyTyped(KeyEvent arg0) {}
 			});
 		drawingcomponent.setFocusable(true);
+
 	}
 	private void clearAction()
 	{
