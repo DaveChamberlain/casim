@@ -58,7 +58,8 @@ public class DatapathBuilder extends AbstractGUI
 	
 	private Stack<String> undolog;
 	public ArrayList<CustomProcessor.CustomProcessorModule> modules;
-	
+	private GUIComponent guiComponent;
+
 	public DatapathBuilder(Computer computer)
 	{
 		super(computer,"Datapath Builder",1000,700,true,false,false,true);
@@ -94,29 +95,17 @@ public class DatapathBuilder extends AbstractGUI
 		if (toolscroll == null) return;
 		
 		try {
-			Dimension d = guiComponent.getSize();
-			//toolscroll.setBounds(0,0,toolcomponent.width+20,height-STATUSSIZE);
+			// Change the height of the main gui container and the tool scroll.
 			guiComponent.setBounds(0, 0, width, height);
-			//guiComponent.invalidate();
-			//guiComponent.repaint();
 			toolscroll.setBounds(0,0,toolcomponent.width+20,height-STATUSSIZE);
-//			toolscroll.setPreferredSize(new Dimension(40,80));
-//			toolscroll.invalidate();
-//			toolscroll.repaint();
+
 			drawingcomponent.restoreSize();
-	//		drawingcomponent.scroll.setBounds(toolcomponent.width+20,0,frameX-toolcomponent.width-20,frameY-STATUSSIZE);
 			drawingcomponent.scroll.revalidate();
-			//drawingcomponent.invalidate();
-			//drawingcomponent.repaint();
-			//drawingcomponent.scroll.repaint();
-//			toolscroll.invalidate();
-//			toolscroll.repaint();
 		} catch(Exception e) {}
 		
 		revalidate();
 		repaint();
 	}
-	GUIComponent guiComponent;
 	public void constructGUI(GUIComponent guiComponent) 
 	{ 
 		this.guiComponent = guiComponent;
