@@ -677,7 +677,7 @@ public class BootGUI extends AbstractGUI
 				setVisible(false);
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
-				updateCheckBoxes();
+				//updateCheckBoxes();
 				computer.stepLock.lockResume();
 			}
 			else if (e.getActionCommand().equals("Boot Disk C:"))
