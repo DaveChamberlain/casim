@@ -101,8 +101,6 @@ public class DatapathBuilder extends AbstractGUI
 
 			drawingcomponent.restoreSize();
 			drawingcomponent.scroll.revalidate();
-			Dimension sb = drawingcomponent.scroll.getVerticalScrollBar().getPreferredSize();
-			setStatusLabel("sb width: " + sb.getWidth());
 		} catch(Exception e) {}
 		
 		revalidate();
@@ -1084,9 +1082,8 @@ public class DatapathBuilder extends AbstractGUI
 			add(saveChanges);
 			
 			scroll=new JScrollPane(this);
-			scroll.setBounds(toolcomponent.width+20,0,width+20,frameY-STATUSSIZE);
 			guiComponent.add(scroll);
-			drawingcomponent.scroll.setBounds(toolcomponent.width+20+width+20,0,frameX-toolcomponent.width-width,frameY-STATUSSIZE);
+			drawingcomponent.restoreSize();
 			guiComponent.revalidate();
 		}
 		public void paintComponent(Graphics g)
@@ -1460,7 +1457,7 @@ public class DatapathBuilder extends AbstractGUI
 		{
 			super();
 			scroll=new JScrollPane(this);
-			scroll.setBounds(toolcomponent.width+20,0,frameX-toolcomponent.width-20,frameY-STATUSSIZE);
+			restoreSize();
 			scroll.getHorizontalScrollBar().setValue(dpwidth/2);
 			scroll.getVerticalScrollBar().setValue(dpheight/2);
 			scroll.getHorizontalScrollBar().addAdjustmentListener(new AdjustmentListener(){
@@ -1488,7 +1485,8 @@ public class DatapathBuilder extends AbstractGUI
 		}
 		public void restoreSize()
 		{
-			scroll.setBounds(toolcomponent.width+20,0,frameX-toolcomponent.width-20,frameY-STATUSSIZE);			
+			int offset = (int) scroll.getVerticalScrollBar().getPreferredSize().getWidth();
+			scroll.setBounds(toolscroll.getWidth(),0,frameX-toolscroll.getWidth()-offset+5,frameY-STATUSSIZE);			
 		}
 		public Dimension getPreferredSize()
 		{
