@@ -101,6 +101,8 @@ public class DatapathBuilder extends AbstractGUI
 
 			drawingcomponent.restoreSize();
 			drawingcomponent.scroll.revalidate();
+			Dimension sb = drawingcomponent.scroll.getVerticalScrollBar().getPreferredSize();
+			setStatusLabel("sb width: " + sb.getWidth());
 		} catch(Exception e) {}
 		
 		revalidate();
