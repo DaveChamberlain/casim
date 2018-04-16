@@ -144,12 +144,12 @@ public class BootGUI extends AbstractGUI
             diskIncluded[0]=true;
             diskImage[0]=scan.next();
         }
-        if (type.equals("DiskB"))
+        else if (type.equals("DiskB"))
         {
             diskIncluded[1]=true;
             diskImage[1]=scan.next();
         }
-        if (type.equals("DiskC"))
+        else if (type.equals("DiskC"))
         {
             diskIncluded[2]=true;
             diskImage[2]=scan.next();
@@ -158,7 +158,7 @@ public class BootGUI extends AbstractGUI
             heads[2]=scan.nextInt();
             sectors[2]=scan.nextInt();
         }
-        if (type.equals("DiskD"))
+        else if (type.equals("DiskD"))
         {
             diskIncluded[3]=true;
             diskImage[3]=scan.next();
@@ -167,20 +167,20 @@ public class BootGUI extends AbstractGUI
             heads[3]=scan.nextInt();
             sectors[3]=scan.nextInt();
         }
-        if (type.equals("ROM"))
+        else if (type.equals("ROM"))
         {
             romImage=scan.next();
         }
-        if (type.equals("VideoROM"))
+        else if (type.equals("VideoROM"))
         {
             vromImage=scan.next();
         }
-        if (type.equals("MemoryContents"))
+        else if (type.equals("MemoryContents"))
         {
             memoryImage=scan.next();
             memoryImageStart=Integer.parseInt(scan.next(),16);
         }
-        if (type.equals("CustomProcessor"))
+        else if (type.equals("CustomProcessor"))
         {
             datapathxml=scan.next();
             controlxml=scan.next();
