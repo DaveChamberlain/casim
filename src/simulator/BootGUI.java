@@ -137,7 +137,7 @@ public class BootGUI extends AbstractGUI
 		refresh();
 	}
 
-    public void findBootType(Scanner scan) {
+	public void findBootType(Scanner scan) {
         String type=scan.next();
         if (type.equals("DiskA"))
         {
