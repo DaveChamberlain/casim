@@ -625,11 +625,11 @@ public class BootGUI extends AbstractGUI
 			PrintWriter pw=new PrintWriter("settings.txt");
 			if (diskIncluded[0])
 				pw.println("DiskA "+diskImage[0]);
-			else if (diskIncluded[1])
+			if (diskIncluded[1])
 				pw.println("DiskB "+diskImage[1]);
-			else if (diskIncluded[2])
+			if (diskIncluded[2])
 				pw.println("DiskC "+diskImage[2]+" "+(isCD[2]?1:0)+" "+cylinders[2]+" "+heads[2]+" "+sectors[2]);
-			else if (diskIncluded[3])
+			if (diskIncluded[3])
 				pw.println("DiskD "+diskImage[3]+" "+(isCD[3]?1:0)+" "+cylinders[3]+" "+heads[3]+" "+sectors[3]);
 			pw.println("ROM "+romImage);
 			pw.println("VideoROM "+vromImage);
