@@ -132,6 +132,10 @@ public class BootGUI extends AbstractGUI
         catch (java.io.FileNotFoundException e) {
             System.out.println("Error: Settings.txt not found");
         }
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 
 		computer.computerGUI.menubar.setVisible(false);
 		refresh();
@@ -621,11 +625,11 @@ public class BootGUI extends AbstractGUI
 			PrintWriter pw=new PrintWriter("settings.txt");
 			if (diskIncluded[0])
 				pw.println("DiskA "+diskImage[0]);
-			if (diskIncluded[1])
+			else if (diskIncluded[1])
 				pw.println("DiskB "+diskImage[1]);
-			if (diskIncluded[2])
+			else if (diskIncluded[2])
 				pw.println("DiskC "+diskImage[2]+" "+(isCD[2]?1:0)+" "+cylinders[2]+" "+heads[2]+" "+sectors[2]);
-			if (diskIncluded[3])
+			else if (diskIncluded[3])
 				pw.println("DiskD "+diskImage[3]+" "+(isCD[3]?1:0)+" "+cylinders[3]+" "+heads[3]+" "+sectors[3]);
 			pw.println("ROM "+romImage);
 			pw.println("VideoROM "+vromImage);
@@ -673,6 +677,7 @@ public class BootGUI extends AbstractGUI
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
 				computer.stepLock.lockResume();
+
 			}
 			else if (e.getActionCommand().equals("Boot Disk C:"))
 			{
@@ -681,7 +686,6 @@ public class BootGUI extends AbstractGUI
 				setVisible(false);
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
-
 				computer.stepLock.lockResume();
 			}
 			else if (e.getActionCommand().equals("Boot No Disk"))
@@ -692,7 +696,6 @@ public class BootGUI extends AbstractGUI
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
 				singlestepbox.setSelected(true);
-
 				computer.stepLock.lockResume();
 			}
 			else if (e.getActionCommand().equals("Processor Design"))
