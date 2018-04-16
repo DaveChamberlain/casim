@@ -1486,7 +1486,7 @@ public class DatapathBuilder extends AbstractGUI
 		public void restoreSize()
 		{
 			int offset = (int) scroll.getVerticalScrollBar().getPreferredSize().getWidth();
-			scroll.setBounds(toolscroll.getWidth(),0,frameX-toolscroll.getWidth()-offset+5,frameY-STATUSSIZE);			
+			scroll.setBounds(toolscroll.getWidth(),0,frameX-toolscroll.getWidth(),frameY-STATUSSIZE);			
 		}
 		public Dimension getPreferredSize()
 		{
