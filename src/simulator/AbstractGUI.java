@@ -81,10 +81,10 @@ public abstract class AbstractGUI extends JInternalFrame
 		 * default it, force it to be a line border.
 		 */
 		
-		try {
-			setBorder(BorderFactory.createLineBorder(Color.black, 1));
-		} catch (Exception e) {
-		}
+		Border frameBorder=getBorder();
+		
+		frameBorder = ((javax.swing.border.CompoundBorder)frameBorder).getInsideBorder();
+		setBorder(BorderFactory.createCompoundBorder(BorderFactory.createLineBorder(Color.black), frameBorder));
 
 	}
 
