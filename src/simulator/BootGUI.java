@@ -557,9 +557,59 @@ public class BootGUI extends AbstractGUI
 			g.fillRect(0,ROWHEIGHT+i*ROWHEIGHT,BWIDTH,ROWHEIGHT);
 		}
 	}
+	
+	public void bootProcessorDesign()
+	{
+		datapathxml=datapathField.getText();
+		controlxml=controlField.getText();
+	
+		if (memoryimagebox.isSelected())
+		{
+			memoryImage=memoryField.getText();
+			memoryImageStart=Integer.parseInt(memoryStartField.getText(),16);
+		}
+		else
+		{
+			memoryImage="";
+		}
+		
+	}
+	
+	public void updateSettings()
+	{
+		try
+		{
+			PrintWriter pw=new PrintWriter("settings.txt");
+			if (diskIncluded[0])
+				pw.println("DiskA "+diskImage[0]);
+			if (diskIncluded[1])
+				pw.println("DiskB "+diskImage[1]);
+			if (diskIncluded[2])
+				pw.println("DiskC "+diskImage[2]+" "+(isCD[2]?1:0)+" "+cylinders[2]+" "+heads[2]+" "+sectors[2]);
+			if (diskIncluded[3])
+				pw.println("DiskD "+diskImage[3]+" "+(isCD[3]?1:0)+" "+cylinders[3]+" "+heads[3]+" "+sectors[3]);
+			pw.println("ROM "+romImage);
+			pw.println("VideoROM "+vromImage);
+			if (!memoryImage.equals(""))
+				pw.println("MemoryContents "+memoryImage+" "+Integer.toHexString(memoryImageStart));
+			if (customprocessorbox.isSelected())
+				pw.println("CustomProcessor "+datapathxml+" "+controlxml);
+			pw.close();
+		}
+		catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
 
 	public void updateCheckBoxes()
 	{
+		romImage=romField.getText();
+		vromImage=vromField.getText();
 		if (includeBox[0].isSelected())
 		{
 			diskIncluded[0]=true;
@@ -606,47 +656,8 @@ public class BootGUI extends AbstractGUI
 				sectors[3]=Integer.parseInt(sBox[3].getText());
 			}
 		}
-		romImage=romField.getText();
-		vromImage=vromField.getText();
-		if (memoryimagebox.isSelected())
-		{
-			memoryImage=memoryField.getText();
-			memoryImageStart=Integer.parseInt(memoryStartField.getText(),16);
-		}
-		else
-		{
-			memoryImage="";
-		}
-		datapathxml=datapathField.getText();
-		controlxml=controlField.getText();
-
-		try
-		{
-			PrintWriter pw=new PrintWriter("settings.txt");
-			if (diskIncluded[0])
-				pw.println("DiskA "+diskImage[0]);
-			if (diskIncluded[1])
-				pw.println("DiskB "+diskImage[1]);
-			if (diskIncluded[2])
-				pw.println("DiskC "+diskImage[2]+" "+(isCD[2]?1:0)+" "+cylinders[2]+" "+heads[2]+" "+sectors[2]);
-			if (diskIncluded[3])
-				pw.println("DiskD "+diskImage[3]+" "+(isCD[3]?1:0)+" "+cylinders[3]+" "+heads[3]+" "+sectors[3]);
-			pw.println("ROM "+romImage);
-			pw.println("VideoROM "+vromImage);
-			if (!memoryImage.equals(""))
-				pw.println("MemoryContents "+memoryImage+" "+Integer.toHexString(memoryImageStart));
-			if (customprocessorbox.isSelected())
-				pw.println("CustomProcessor "+datapathxml+" "+controlxml);
-			pw.close();
-		}
-		catch(IOException e)
-		{
-			e.printStackTrace();
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
+		
+		
 		if (singlestepbox.isSelected())
 		{
 			computer.debugMode=true;
@@ -677,6 +688,7 @@ public class BootGUI extends AbstractGUI
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
 				updateCheckBoxes();
+				updateSettings();
 				computer.stepLock.lockResume();
 			}
 			else if (e.getActionCommand().equals("Boot Disk C:"))
@@ -687,6 +699,7 @@ public class BootGUI extends AbstractGUI
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
 				updateCheckBoxes();
+				updateSettings();
 				computer.stepLock.lockResume();
 			}
 			else if (e.getActionCommand().equals("Boot No Disk"))
@@ -698,6 +711,7 @@ public class BootGUI extends AbstractGUI
 				computer.computerGUI.removeComponent(bootgui);
 				singlestepbox.setSelected(true);
 				updateCheckBoxes();
+				updateSettings();
 				computer.stepLock.lockResume();
 			}
 			else if (e.getActionCommand().equals("Processor Design"))
@@ -708,7 +722,8 @@ public class BootGUI extends AbstractGUI
 				computer.computerGUI.menubar.setVisible(true);
 				computer.computerGUI.removeComponent(bootgui);
 				singlestepbox.setSelected(true);
-				updateCheckBoxes();
+				bootProcessorDesign();
+				updateSettings();
 				bootCustomProcessor=true;
 				computer.stepLock.lockResume();
 			}
