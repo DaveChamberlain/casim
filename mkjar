@@ -34,6 +34,9 @@ if [ "$jar_status" == "1" ]; then
    echo "   sudo apt-get install oracle-java8-installer"
    echo ""
    echo "Otherwise, you will need to open your IDE and load the project and build."
+   echo ""
+   echo "NOTE: You may also retrieve one using the -i switch:"
+   echo "      mkjar -i"
    exit
 fi 
 
