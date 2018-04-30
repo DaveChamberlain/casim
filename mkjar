@@ -8,9 +8,12 @@ if [ "$cmdstatus" == "1" ]; then
    echo "Likely that you may have installed the JRE but not the JDK, make sure you have"
    echo "installed the JDK."
    echo ""
-   echo "On Ubuntu 16.04, try installing with: sudo apt-get install openjdk-9-jdk"
+   echo "On Ubuntu 16.04, try installing with: "
+   echo "   sudo add-apt-repository ppa:webupd8team/java"
+   echo "   sudo apt-get update"
+   echo "   sudo apt-get install oracle-java8-installer"
    echo ""
-   echo "Otherwise, you will need to open your IDE and load the project."
+   echo "Otherwise, you will need to open your IDE and load the project and build."
    exit
 fi 
 
