@@ -14,10 +14,12 @@ if [ "$1" == "-h" ]; then
    echo "  -h   This message"
    echo "  -i   Install - used when you are not set up as a developer, this will get"
    echo "       a pre-built jar file."
+   exit
 fi
 
 if [ "$1" == "-i" ]; then
-   jar_status=0
+   curl -O https://raw.githubusercontent.com/DaveChamberlain/casim/release/simulator.jar
+   exit
 fi
 
 if [ "$jar_status" == "1" ]; then
