@@ -29,7 +29,7 @@ resource=resource
 bin=${src}
 here=`pwd`
 filename=${here}/${filename}
-javac ${src}/*.java
+javac ${src}/*.java 2>&1 | grep -v Note
 
 cd ${bin}/..
 echo "Class-Path: ." > .manifest
