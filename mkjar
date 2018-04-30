@@ -5,6 +5,10 @@ cmdstatus=$?
 
 if [ "$cmdstatus" == "1" ]; then
    echo "The 'jar' command could not be found. Make sure it is installed and in your path."
+   echo "Likely that you may have installed the JRE but not the JDK, make sure you have"
+   echo "installed the JDK."
+   echo ""
+   echo "Otherwise, you will need to open your IDE and load the project."
    exit
 fi 
 
@@ -15,25 +19,19 @@ fi
 
 echo "Creating jar file: ${filename}"
 
-if [ -d out ]; then
-   echo "Using IntelliJ build"
-   filename=../../../$filename
-   bin=out/production/simulator
-else 
-   if [ -d bin ]; then
-      echo "Using Eclipse build"
-      filename=../$filename
-      bin=bin
-   else
-      echo "Can't find a way to build."
-      exit
-   fi
-fi
+src=src/simulator
+resource=resource
+bin=${src}
+here=`pwd`
+filename=${here}/${filename}
+javac ${src}/*.java
 
-cd ${bin}
+cd ${bin}/..
 echo "Class-Path: ." > .manifest
 echo "Main-Class: simulator.Computer" >> .manifest
 echo "" >> .manifest
-jar cfm ${filename} .manifest simulator/*.class resource/*
+jar cfm ${filename} .manifest simulator/*.class ${resource}/*
 rm .manifest
+cd ${here}
+rm ${src}/*.class
 echo "Done."
