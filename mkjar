@@ -18,6 +18,7 @@ if [ "$1" == "-h" ]; then
 fi
 
 if [ "$1" == "-i" ]; then
+   echo "Retrieving jar file from release area."
    curl -O https://raw.githubusercontent.com/DaveChamberlain/casim/release/simulator.jar
    exit
 fi
