@@ -1,78 +1,82 @@
 <processor>
 
-<register>
-<number>10</number>
-<name>PC</name>
-<bits>8</bits>
-<xcoordinate>369</xcoordinate>
-<ycoordinate>591</ycoordinate>
-<xcoordinate2>409</xcoordinate2>
-<ycoordinate2>621</ycoordinate2>
-<description></description>
-<enable>202</enable>
-</register>
+    <register>
+        <number>10</number>
+        <name>PC</name>
+        <bits>8</bits>
+        <xcoordinate>369</xcoordinate>
+        <ycoordinate>591</ycoordinate>
+        <xcoordinate2>409</xcoordinate2>
+        <ycoordinate2>621</ycoordinate2>
+        <description></description>
+        <enable>202</enable>
+    </register>
 
-<register>
-<number>11</number>
-<name>MemoryAddress</name>
-<bits>8</bits>
-<xcoordinate>462</xcoordinate>
-<ycoordinate>711</ycoordinate>
-<xcoordinate2>502</xcoordinate2>
-<ycoordinate2>741</ycoordinate2>
-<description></description>
-<enable>200</enable>
-</register>
+    <register>
+        <number>11</number>
+        <name>MemoryAddress</name>
+        <bits>8</bits>
+        <xcoordinate>462</xcoordinate>
+        <ycoordinate>711</ycoordinate>
+        <xcoordinate2>502</xcoordinate2>
+        <ycoordinate2>741</ycoordinate2>
+        <description></description>
+        <enable>200</enable>
+    </register>
 
-<multiplexor>
-<number>12</number>
-<name>MemoryAddressMux</name>
-<bits>8</bits>
-<xcoordinate>462</xcoordinate>
-<ycoordinate>684</ycoordinate>
-<xcoordinate2>502</xcoordinate2>
-<ycoordinate2>699</ycoordinate2>
-<description></description>
-<address>356</address>
-</multiplexor>
+    <multiplexor>
+        <number>12</number>
+        <name>MemoryAddressMux</name>
+        <bits>8</bits>
+        <xcoordinate>462</xcoordinate>
+        <ycoordinate>684</ycoordinate>
+        <xcoordinate2>502</xcoordinate2>
+        <ycoordinate2>699</ycoordinate2>
+        <description></description>
+        <address>356</address>
+    </multiplexor>
 
-<output pin>
-<number>15</number>
-<name>address</name>
-<bits>8</bits>
-<xcoordinate>480</xcoordinate>
-<ycoordinate>762</ycoordinate>
-<xcoordinate2>493</xcoordinate2>
-<ycoordinate2>772</ycoordinate2>
-<description></description>
-</output pin>
+    <output pin>
+        <number>15</number>
+        <name>address</name>
+        <bits>8</bits>
+        <xcoordinate>480</xcoordinate>
+        <ycoordinate>762</ycoordinate>
+        <xcoordinate2>493</xcoordinate2>
+        <ycoordinate2>772</ycoordinate2>
+        <description></description>
+    </output pin>
 
-<register>
-<number>22</number>
-<name>IR</name>
-<bits>8</bits>
-<xcoordinate>459</xcoordinate>
-<ycoordinate>882</ycoordinate>
-<xcoordinate2>499</xcoordinate2>
-<ycoordinate2>912</ycoordinate2>
-<description></description>
-<enable>226</enable>
-</register>
+    <register>
+        <number>22</number>
+        <name>IR</name>
+        <bits>8</bits>
+        <xcoordinate>459</xcoordinate>
+        <ycoordinate>882</ycoordinate>
+        <xcoordinate2>499</xcoordinate2>
+        <ycoordinate2>912</ycoordinate2>
+        <description></description>
+        <enable>226</enable>
+    </register>
 
-<splitter>
-<number>24</number>
-<name>splitter16</name>
-<bits>8</bits>
-<xcoordinate>459</xcoordinate>
-<ycoordinate>936</ycoordinate>
-<xcoordinate2>539</xcoordinate2>
-<ycoordinate2>946</ycoordinate2>
-<description></description>
-<line 32>7:4</line>
-<line 139>3:0</line>
+    <splitter>
+        <number>24</number>
+        <name>splitter16</name>
+        <bits>8</bits>
+        <xcoordinate>459</xcoordinate>
+        <ycoordinate>936</ycoordinate>
+        <xcoordinate2>539</xcoordinate2>
+        <ycoordinate2>946</ycoordinate2>
+        <description></description>
+        <line
+        32>7:4
+    </line>
+    <line
+    139>3:0
+</line>
 <line 155>1:0</line>
 <line 154>3:2</line>
-</splitter>
+        </splitter>
 
 <register>
 <number>26</number>
@@ -274,9 +278,11 @@
 <xcoordinate2>364</xcoordinate2>
 <ycoordinate2>1117</ycoordinate2>
 <description></description>
-<line 664>3:0</line>
+<line
+664>3:0
+</line>
 <line 147>7:4</line>
-</splitter>
+        </splitter>
 
 <joiner>
 <number>131</number>
@@ -6704,5 +6710,5 @@
 <exit>131</exit>
 </bus>
 
-</processor>
+        </processor>
 

@@ -1,530 +1,534 @@
 <processor>
 
-<register>
-<number>4</number>
-<name>PC</name>
-<bits>16</bits>
-<xcoordinate>1390</xcoordinate>
-<ycoordinate>120</ycoordinate>
-</register>
+    <register>
+        <number>4</number>
+        <name>PC</name>
+        <bits>16</bits>
+        <xcoordinate>1390</xcoordinate>
+        <ycoordinate>120</ycoordinate>
+    </register>
 
-<memory>
-<number>5</number>
-<name>memory</name>
-<bits>8</bits>
-<xcoordinate>1540</xcoordinate>
-<ycoordinate>290</ycoordinate>
-</memory>
+    <memory>
+        <number>5</number>
+        <name>memory</name>
+        <bits>8</bits>
+        <xcoordinate>1540</xcoordinate>
+        <ycoordinate>290</ycoordinate>
+    </memory>
 
-<adder>
-<number>8</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1475</xcoordinate>
-<ycoordinate>175</ycoordinate>
-</adder>
+    <adder>
+        <number>8</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1475</xcoordinate>
+        <ycoordinate>175</ycoordinate>
+    </adder>
 
-<constant>
-<number>10</number>
-<name>1</name>
-<bits>16</bits>
-<xcoordinate>1440</xcoordinate>
-<ycoordinate>95</ycoordinate>
-</constant>
+    <constant>
+        <number>10</number>
+        <name>1</name>
+        <bits>16</bits>
+        <xcoordinate>1440</xcoordinate>
+        <ycoordinate>95</ycoordinate>
+    </constant>
 
-<constant>
-<number>11</number>
-<name>2</name>
-<bits>16</bits>
-<xcoordinate>1495</xcoordinate>
-<ycoordinate>95</ycoordinate>
-</constant>
+    <constant>
+        <number>11</number>
+        <name>2</name>
+        <bits>16</bits>
+        <xcoordinate>1495</xcoordinate>
+        <ycoordinate>95</ycoordinate>
+    </constant>
 
-<bus>
-<number>33</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1505</xcoordinate>
-<ycoordinate>110</ycoordinate>
-<xcoordinate2>1505</xcoordinate2>
-<ycoordinate2>175</ycoordinate2>
-<entry>11</entry>
-<exit>8</exit>
-</bus>
+    <bus>
+        <number>33</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1505</xcoordinate>
+        <ycoordinate>110</ycoordinate>
+        <xcoordinate2>1505</xcoordinate2>
+        <ycoordinate2>175</ycoordinate2>
+        <entry>11</entry>
+        <exit>8</exit>
+    </bus>
 
-<constant>
-<number>41</number>
-<name>100</name>
-<bits>16</bits>
-<xcoordinate>1590</xcoordinate>
-<ycoordinate>175</ycoordinate>
-</constant>
+    <constant>
+        <number>41</number>
+        <name>100</name>
+        <bits>16</bits>
+        <xcoordinate>1590</xcoordinate>
+        <ycoordinate>175</ycoordinate>
+    </constant>
 
-<multiplexor>
-<number>45</number>
-<name>pcselect</name>
-<bits>16</bits>
-<xcoordinate>1415</xcoordinate>
-<ycoordinate>255</ycoordinate>
-</multiplexor>
+    <multiplexor>
+        <number>45</number>
+        <name>pcselect</name>
+        <bits>16</bits>
+        <xcoordinate>1415</xcoordinate>
+        <ycoordinate>255</ycoordinate>
+    </multiplexor>
 
-<adder>
-<number>46</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1530</xcoordinate>
-<ycoordinate>175</ycoordinate>
-</adder>
+    <adder>
+        <number>46</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1530</xcoordinate>
+        <ycoordinate>175</ycoordinate>
+    </adder>
 
-<constant>
-<number>47</number>
-<name>3</name>
-<bits>16</bits>
-<xcoordinate>1555</xcoordinate>
-<ycoordinate>95</ycoordinate>
-</constant>
+    <constant>
+        <number>47</number>
+        <name>3</name>
+        <bits>16</bits>
+        <xcoordinate>1555</xcoordinate>
+        <ycoordinate>95</ycoordinate>
+    </constant>
 
-<bus>
-<number>48</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1565</xcoordinate>
-<ycoordinate>110</ycoordinate>
-<xcoordinate2>1565</xcoordinate2>
-<ycoordinate2>175</ycoordinate2>
-<entry>47</entry>
-<exit>46</exit>
-</bus>
+    <bus>
+        <number>48</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1565</xcoordinate>
+        <ycoordinate>110</ycoordinate>
+        <xcoordinate2>1565</xcoordinate2>
+        <ycoordinate2>175</ycoordinate2>
+        <entry>47</entry>
+        <exit>46</exit>
+    </bus>
 
-<bus>
-<number>50</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1495</xcoordinate>
-<ycoordinate>205</ycoordinate>
-<xcoordinate2>1495</xcoordinate2>
-<ycoordinate2>215</ycoordinate2>
-<entry>8</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>50</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1495</xcoordinate>
+        <ycoordinate>205</ycoordinate>
+        <xcoordinate2>1495</xcoordinate2>
+        <ycoordinate2>215</ycoordinate2>
+        <entry>8</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>51</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1495</xcoordinate>
-<ycoordinate>210</ycoordinate>
-<xcoordinate2>1440</xcoordinate2>
-<ycoordinate2>210</ycoordinate2>
-<entry>50</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>51</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1495</xcoordinate>
+        <ycoordinate>210</ycoordinate>
+        <xcoordinate2>1440</xcoordinate2>
+        <ycoordinate2>210</ycoordinate2>
+        <entry>50</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>52</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1440</xcoordinate>
-<ycoordinate>210</ycoordinate>
-<xcoordinate2>1440</xcoordinate2>
-<ycoordinate2>255</ycoordinate2>
-<entry>51</entry>
-<exit>45</exit>
-</bus>
+    <bus>
+        <number>52</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1440</xcoordinate>
+        <ycoordinate>210</ycoordinate>
+        <xcoordinate2>1440</xcoordinate2>
+        <ycoordinate2>255</ycoordinate2>
+        <entry>51</entry>
+        <exit>45</exit>
+    </bus>
 
-<bus>
-<number>54</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1550</xcoordinate>
-<ycoordinate>205</ycoordinate>
-<xcoordinate2>1550</xcoordinate2>
-<ycoordinate2>220</ycoordinate2>
-<entry>46</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>54</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1550</xcoordinate>
+        <ycoordinate>205</ycoordinate>
+        <xcoordinate2>1550</xcoordinate2>
+        <ycoordinate2>220</ycoordinate2>
+        <entry>46</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>55</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1550</xcoordinate>
-<ycoordinate>215</ycoordinate>
-<xcoordinate2>1445</xcoordinate2>
-<ycoordinate2>215</ycoordinate2>
-<entry>54</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>55</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1550</xcoordinate>
+        <ycoordinate>215</ycoordinate>
+        <xcoordinate2>1445</xcoordinate2>
+        <ycoordinate2>215</ycoordinate2>
+        <entry>54</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>56</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1445</xcoordinate>
-<ycoordinate>215</ycoordinate>
-<xcoordinate2>1445</xcoordinate2>
-<ycoordinate2>255</ycoordinate2>
-<entry>55</entry>
-<exit>45</exit>
-</bus>
+    <bus>
+        <number>56</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1445</xcoordinate>
+        <ycoordinate>215</ycoordinate>
+        <xcoordinate2>1445</xcoordinate2>
+        <ycoordinate2>255</ycoordinate2>
+        <entry>55</entry>
+        <exit>45</exit>
+    </bus>
 
-<bus>
-<number>57</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1600</xcoordinate>
-<ycoordinate>190</ycoordinate>
-<xcoordinate2>1600</xcoordinate2>
-<ycoordinate2>225</ycoordinate2>
-<entry>41</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>57</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1600</xcoordinate>
+        <ycoordinate>190</ycoordinate>
+        <xcoordinate2>1600</xcoordinate2>
+        <ycoordinate2>225</ycoordinate2>
+        <entry>41</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>58</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1600</xcoordinate>
-<ycoordinate>220</ycoordinate>
-<xcoordinate2>1450</xcoordinate2>
-<ycoordinate2>220</ycoordinate2>
-<entry>57</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>58</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1600</xcoordinate>
+        <ycoordinate>220</ycoordinate>
+        <xcoordinate2>1450</xcoordinate2>
+        <ycoordinate2>220</ycoordinate2>
+        <entry>57</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>60</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1450</xcoordinate>
-<ycoordinate>220</ycoordinate>
-<xcoordinate2>1450</xcoordinate2>
-<ycoordinate2>255</ycoordinate2>
-<entry>58</entry>
-<exit>45</exit>
-</bus>
+    <bus>
+        <number>60</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1450</xcoordinate>
+        <ycoordinate>220</ycoordinate>
+        <xcoordinate2>1450</xcoordinate2>
+        <ycoordinate2>255</ycoordinate2>
+        <entry>58</entry>
+        <exit>45</exit>
+    </bus>
 
-<bus>
-<number>61</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1410</xcoordinate>
-<ycoordinate>150</ycoordinate>
-<xcoordinate2>1410</xcoordinate2>
-<ycoordinate2>210</ycoordinate2>
-<entry>4</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>61</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1410</xcoordinate>
+        <ycoordinate>150</ycoordinate>
+        <xcoordinate2>1410</xcoordinate2>
+        <ycoordinate2>210</ycoordinate2>
+        <entry>4</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>62</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1410</xcoordinate>
-<ycoordinate>210</ycoordinate>
-<xcoordinate2>1425</xcoordinate2>
-<ycoordinate2>210</ycoordinate2>
-<entry>61</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>62</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1410</xcoordinate>
+        <ycoordinate>210</ycoordinate>
+        <xcoordinate2>1425</xcoordinate2>
+        <ycoordinate2>210</ycoordinate2>
+        <entry>61</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>64</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1425</xcoordinate>
-<ycoordinate>210</ycoordinate>
-<xcoordinate2>1425</xcoordinate2>
-<ycoordinate2>255</ycoordinate2>
-<entry>62</entry>
-<exit>45</exit>
-</bus>
+    <bus>
+        <number>64</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1425</xcoordinate>
+        <ycoordinate>210</ycoordinate>
+        <xcoordinate2>1425</xcoordinate2>
+        <ycoordinate2>255</ycoordinate2>
+        <entry>62</entry>
+        <exit>45</exit>
+    </bus>
 
-<bus>
-<number>65</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1410</xcoordinate>
-<ycoordinate>160</ycoordinate>
-<xcoordinate2>1535</xcoordinate2>
-<ycoordinate2>160</ycoordinate2>
-<entry>61</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>65</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1410</xcoordinate>
+        <ycoordinate>160</ycoordinate>
+        <xcoordinate2>1535</xcoordinate2>
+        <ycoordinate2>160</ycoordinate2>
+        <entry>61</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>66</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1530</xcoordinate>
-<ycoordinate>160</ycoordinate>
-<xcoordinate2>1530</xcoordinate2>
-<ycoordinate2>175</ycoordinate2>
-<entry>65</entry>
-<exit>46</exit>
-</bus>
+    <bus>
+        <number>66</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1530</xcoordinate>
+        <ycoordinate>160</ycoordinate>
+        <xcoordinate2>1530</xcoordinate2>
+        <ycoordinate2>175</ycoordinate2>
+        <entry>65</entry>
+        <exit>46</exit>
+    </bus>
 
-<bus>
-<number>67</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1480</xcoordinate>
-<ycoordinate>160</ycoordinate>
-<xcoordinate2>1480</xcoordinate2>
-<ycoordinate2>175</ycoordinate2>
-<entry>65</entry>
-<exit>8</exit>
-</bus>
+    <bus>
+        <number>67</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1480</xcoordinate>
+        <ycoordinate>160</ycoordinate>
+        <xcoordinate2>1480</xcoordinate2>
+        <ycoordinate2>175</ycoordinate2>
+        <entry>65</entry>
+        <exit>8</exit>
+    </bus>
 
-<bus>
-<number>69</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1435</xcoordinate>
-<ycoordinate>265</ycoordinate>
-<xcoordinate2>1435</xcoordinate2>
-<ycoordinate2>300</ycoordinate2>
-<entry>45</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>69</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1435</xcoordinate>
+        <ycoordinate>265</ycoordinate>
+        <xcoordinate2>1435</xcoordinate2>
+        <ycoordinate2>300</ycoordinate2>
+        <entry>45</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>70</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1435</xcoordinate>
-<ycoordinate>295</ycoordinate>
-<xcoordinate2>1540</xcoordinate2>
-<ycoordinate2>295</ycoordinate2>
-<entry>69</entry>
-<exit>5</exit>
-</bus>
+    <bus>
+        <number>70</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1435</xcoordinate>
+        <ycoordinate>295</ycoordinate>
+        <xcoordinate2>1540</xcoordinate2>
+        <ycoordinate2>295</ycoordinate2>
+        <entry>69</entry>
+        <exit>5</exit>
+    </bus>
 
-<bus>
-<number>71</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1435</xcoordinate>
-<ycoordinate>290</ycoordinate>
-<xcoordinate2>1370</xcoordinate2>
-<ycoordinate2>290</ycoordinate2>
-<entry>69</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>71</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1435</xcoordinate>
+        <ycoordinate>290</ycoordinate>
+        <xcoordinate2>1370</xcoordinate2>
+        <ycoordinate2>290</ycoordinate2>
+        <entry>69</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>72</number>
-<name></name>
-<bits>16</bits>
-<xcoordinate>1370</xcoordinate>
-<ycoordinate>290</ycoordinate>
-<xcoordinate2>1370</xcoordinate2>
-<ycoordinate2>100</ycoordinate2>
-<entry>71</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>72</number>
+        <name></name>
+        <bits>16</bits>
+        <xcoordinate>1370</xcoordinate>
+        <ycoordinate>290</ycoordinate>
+        <xcoordinate2>1370</xcoordinate2>
+        <ycoordinate2>100</ycoordinate2>
+        <entry>71</entry>
+        <exit>0</exit>
+    </bus>
 
-<register>
-<number>75</number>
-<name>IR</name>
-<bits>8</bits>
-<xcoordinate>1360</xcoordinate>
-<ycoordinate>360</ycoordinate>
-</register>
+    <register>
+        <number>75</number>
+        <name>IR</name>
+        <bits>8</bits>
+        <xcoordinate>1360</xcoordinate>
+        <ycoordinate>360</ycoordinate>
+    </register>
 
-<register>
-<number>76</number>
-<name>IRext</name>
-<bits>8</bits>
-<xcoordinate>1450</xcoordinate>
-<ycoordinate>360</ycoordinate>
-</register>
+    <register>
+        <number>76</number>
+        <name>IRext</name>
+        <bits>8</bits>
+        <xcoordinate>1450</xcoordinate>
+        <ycoordinate>360</ycoordinate>
+    </register>
 
-<register>
-<number>77</number>
-<name>imm8</name>
-<bits>8</bits>
-<xcoordinate>1535</xcoordinate>
-<ycoordinate>360</ycoordinate>
-</register>
+    <register>
+        <number>77</number>
+        <name>imm8</name>
+        <bits>8</bits>
+        <xcoordinate>1535</xcoordinate>
+        <ycoordinate>360</ycoordinate>
+    </register>
 
-<register>
-<number>78</number>
-<name>imm8h</name>
-<bits>8</bits>
-<xcoordinate>1625</xcoordinate>
-<ycoordinate>360</ycoordinate>
-</register>
+    <register>
+        <number>78</number>
+        <name>imm8h</name>
+        <bits>8</bits>
+        <xcoordinate>1625</xcoordinate>
+        <ycoordinate>360</ycoordinate>
+    </register>
 
-<bus>
-<number>79</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1560</xcoordinate>
-<ycoordinate>320</ycoordinate>
-<xcoordinate2>1560</xcoordinate2>
-<ycoordinate2>345</ycoordinate2>
-<entry>5</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>79</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1560</xcoordinate>
+        <ycoordinate>320</ycoordinate>
+        <xcoordinate2>1560</xcoordinate2>
+        <ycoordinate2>345</ycoordinate2>
+        <entry>5</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>80</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1560</xcoordinate>
-<ycoordinate>340</ycoordinate>
-<xcoordinate2>1380</xcoordinate2>
-<ycoordinate2>340</ycoordinate2>
-<entry>79</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>80</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1560</xcoordinate>
+        <ycoordinate>340</ycoordinate>
+        <xcoordinate2>1380</xcoordinate2>
+        <ycoordinate2>340</ycoordinate2>
+        <entry>79</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>81</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1380</xcoordinate>
-<ycoordinate>340</ycoordinate>
-<xcoordinate2>1380</xcoordinate2>
-<ycoordinate2>360</ycoordinate2>
-<entry>80</entry>
-<exit>75</exit>
-</bus>
+    <bus>
+        <number>81</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1380</xcoordinate>
+        <ycoordinate>340</ycoordinate>
+        <xcoordinate2>1380</xcoordinate2>
+        <ycoordinate2>360</ycoordinate2>
+        <entry>80</entry>
+        <exit>75</exit>
+    </bus>
 
-<bus>
-<number>82</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1470</xcoordinate>
-<ycoordinate>340</ycoordinate>
-<xcoordinate2>1470</xcoordinate2>
-<ycoordinate2>360</ycoordinate2>
-<entry>80</entry>
-<exit>76</exit>
-</bus>
+    <bus>
+        <number>82</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1470</xcoordinate>
+        <ycoordinate>340</ycoordinate>
+        <xcoordinate2>1470</xcoordinate2>
+        <ycoordinate2>360</ycoordinate2>
+        <entry>80</entry>
+        <exit>76</exit>
+    </bus>
 
-<bus>
-<number>83</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1550</xcoordinate>
-<ycoordinate>340</ycoordinate>
-<xcoordinate2>1550</xcoordinate2>
-<ycoordinate2>360</ycoordinate2>
-<entry>80</entry>
-<exit>77</exit>
-</bus>
+    <bus>
+        <number>83</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1550</xcoordinate>
+        <ycoordinate>340</ycoordinate>
+        <xcoordinate2>1550</xcoordinate2>
+        <ycoordinate2>360</ycoordinate2>
+        <entry>80</entry>
+        <exit>77</exit>
+    </bus>
 
-<bus>
-<number>84</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1560</xcoordinate>
-<ycoordinate>335</ycoordinate>
-<xcoordinate2>1640</xcoordinate2>
-<ycoordinate2>335</ycoordinate2>
-<entry>79</entry>
-<exit>0</exit>
-</bus>
+    <bus>
+        <number>84</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1560</xcoordinate>
+        <ycoordinate>335</ycoordinate>
+        <xcoordinate2>1640</xcoordinate2>
+        <ycoordinate2>335</ycoordinate2>
+        <entry>79</entry>
+        <exit>0</exit>
+    </bus>
 
-<bus>
-<number>85</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1635</xcoordinate>
-<ycoordinate>335</ycoordinate>
-<xcoordinate2>1635</xcoordinate2>
-<ycoordinate2>360</ycoordinate2>
-<entry>84</entry>
-<exit>78</exit>
-</bus>
+    <bus>
+        <number>85</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1635</xcoordinate>
+        <ycoordinate>335</ycoordinate>
+        <xcoordinate2>1635</xcoordinate2>
+        <ycoordinate2>360</ycoordinate2>
+        <entry>84</entry>
+        <exit>78</exit>
+    </bus>
 
-<control>
-<number>86</number>
-<name>opcode</name>
-<bits>8</bits>
-<xcoordinate>1365</xcoordinate>
-<ycoordinate>425</ycoordinate>
-</control>
+    <control>
+        <number>86</number>
+        <name>opcode</name>
+        <bits>8</bits>
+        <xcoordinate>1365</xcoordinate>
+        <ycoordinate>425</ycoordinate>
+    </control>
 
-<bus>
-<number>87</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>1380</xcoordinate>
-<ycoordinate>390</ycoordinate>
-<xcoordinate2>1380</xcoordinate2>
-<ycoordinate2>425</ycoordinate2>
-<entry>75</entry>
-<exit>86</exit>
-</bus>
+    <bus>
+        <number>87</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>1380</xcoordinate>
+        <ycoordinate>390</ycoordinate>
+        <xcoordinate2>1380</xcoordinate2>
+        <ycoordinate2>425</ycoordinate2>
+        <entry>75</entry>
+        <exit>86</exit>
+    </bus>
 
-<register>
-<number>88</number>
-<name>A</name>
-<bits>8</bits>
-<xcoordinate>890</xcoordinate>
-<ycoordinate>350</ycoordinate>
-</register>
+    <register>
+        <number>88</number>
+        <name>A</name>
+        <bits>8</bits>
+        <xcoordinate>890</xcoordinate>
+        <ycoordinate>350</ycoordinate>
+    </register>
 
-<register>
-<number>89</number>
-<name>B</name>
-<bits>8</bits>
-<xcoordinate>950</xcoordinate>
-<ycoordinate>350</ycoordinate>
-</register>
+    <register>
+        <number>89</number>
+        <name>B</name>
+        <bits>8</bits>
+        <xcoordinate>950</xcoordinate>
+        <ycoordinate>350</ycoordinate>
+    </register>
 
-<register>
-<number>90</number>
-<name>C</name>
-<bits>8</bits>
-<xcoordinate>1005</xcoordinate>
-<ycoordinate>350</ycoordinate>
-</register>
+    <register>
+        <number>90</number>
+        <name>C</name>
+        <bits>8</bits>
+        <xcoordinate>1005</xcoordinate>
+        <ycoordinate>350</ycoordinate>
+    </register>
 
-<register>
-<number>91</number>
-<name>D</name>
-<bits>8</bits>
-<xcoordinate>1055</xcoordinate>
-<ycoordinate>350</ycoordinate>
-</register>
+    <register>
+        <number>91</number>
+        <name>D</name>
+        <bits>8</bits>
+        <xcoordinate>1055</xcoordinate>
+        <ycoordinate>350</ycoordinate>
+    </register>
 
-<register>
-<number>92</number>
-<name>E</name>
-<bits>8</bits>
-<xcoordinate>1110</xcoordinate>
-<ycoordinate>350</ycoordinate>
-</register>
+    <register>
+        <number>92</number>
+        <name>E</name>
+        <bits>8</bits>
+        <xcoordinate>1110</xcoordinate>
+        <ycoordinate>350</ycoordinate>
+    </register>
 
-<register>
-<number>93</number>
-<name>H</name>
-<bits>8</bits>
-<xcoordinate>1165</xcoordinate>
-<ycoordinate>350</ycoordinate>
-</register>
+    <register>
+        <number>93</number>
+        <name>H</name>
+        <bits>8</bits>
+        <xcoordinate>1165</xcoordinate>
+        <ycoordinate>350</ycoordinate>
+    </register>
 
-<register>
-<number>94</number>
-<name>L</name>
-<bits>8</bits>
-<xcoordinate>1220</xcoordinate>
-<ycoordinate>350</ycoordinate>
-</register>
+    <register>
+        <number>94</number>
+        <name>L</name>
+        <bits>8</bits>
+        <xcoordinate>1220</xcoordinate>
+        <ycoordinate>350</ycoordinate>
+    </register>
 
-<joiner>
-<number>95</number>
-<name>HL</name>
-<bits>16</bits>
-<xcoordinate>1190</xcoordinate>
-<ycoordinate>440</ycoordinate>
-<line 103>7:0</line>
-<line 100>15:8</line>
-</joiner>
+    <joiner>
+        <number>95</number>
+        <name>HL</name>
+        <bits>16</bits>
+        <xcoordinate>1190</xcoordinate>
+        <ycoordinate>440</ycoordinate>
+        <line
+        103>7:0
+    </line>
+    <line
+    100>15:8
+</line>
+        </joiner>
 
 <joiner>
 <number>96</number>
@@ -532,9 +536,11 @@
 <bits>16</bits>
 <xcoordinate>1075</xcoordinate>
 <ycoordinate>440</ycoordinate>
-<line 109>15:8</line>
+<line
+109>15:8
+</line>
 <line 108>7:0</line>
-</joiner>
+        </joiner>
 
 <joiner>
 <number>97</number>
@@ -542,9 +548,11 @@
 <bits>16</bits>
 <xcoordinate>980</xcoordinate>
 <ycoordinate>440</ycoordinate>
-<line 115>15:8</line>
+<line
+115>15:8
+</line>
 <line 114>7:0</line>
-</joiner>
+        </joiner>
 
 <bus>
 <number>98</number>
@@ -1088,9 +1096,11 @@
 <bits>16</bits>
 <xcoordinate>1575</xcoordinate>
 <ycoordinate>430</ycoordinate>
-<line 151>7:0</line>
+<line
+151>7:0
+</line>
 <line 154>15:8</line>
-</joiner>
+        </joiner>
 
 <bus>
 <number>149</number>
@@ -1918,9 +1928,11 @@
 <bits>16</bits>
 <xcoordinate>1200</xcoordinate>
 <ycoordinate>280</ycoordinate>
-<line 268>15:8</line>
+<line
+268>15:8
+</line>
 <line 267>7:0</line>
-</splitter>
+        </splitter>
 
 <splitter>
 <number>265</number>
@@ -1928,9 +1940,11 @@
 <bits>16</bits>
 <xcoordinate>1090</xcoordinate>
 <ycoordinate>280</ycoordinate>
-<line 270>15:8</line>
+<line
+270>15:8
+</line>
 <line 269>7:0</line>
-</splitter>
+        </splitter>
 
 <splitter>
 <number>266</number>
@@ -1938,9 +1952,11 @@
 <bits>16</bits>
 <xcoordinate>990</xcoordinate>
 <ycoordinate>280</ycoordinate>
-<line 272>15:8</line>
+<line
+272>15:8
+</line>
 <line 271>7:0</line>
-</splitter>
+        </splitter>
 
 <bus>
 <number>267</number>
@@ -2680,9 +2696,11 @@
 <bits>16</bits>
 <xcoordinate>1355</xcoordinate>
 <ycoordinate>550</ycoordinate>
-<line 380>15:8</line>
+<line
+380>15:8
+</line>
 <line 368>7:0</line>
-</joiner>
+        </joiner>
 
 <bus>
 <number>368</number>
@@ -2954,9 +2972,11 @@
 <bits>9</bits>
 <xcoordinate>1015</xcoordinate>
 <ycoordinate>685</ycoordinate>
-<line 406>8:8</line>
+<line
+406>8:8
+</line>
 <line 411>7:0</line>
-</joiner>
+        </joiner>
 
 <joiner>
 <number>401</number>
@@ -2964,9 +2984,11 @@
 <bits>9</bits>
 <xcoordinate>960</xcoordinate>
 <ycoordinate>685</ycoordinate>
-<line 412>7:0</line>
+<line
+412>7:0
+</line>
 <line 408>8:8</line>
-</joiner>
+        </joiner>
 
 <splitter>
 <number>402</number>
@@ -2974,9 +2996,11 @@
 <bits>9</bits>
 <xcoordinate>1000</xcoordinate>
 <ycoordinate>740</ycoordinate>
-<line 428>8:8</line>
+<line
+428>8:8
+</line>
 <line 497>8:8</line>
-</splitter>
+        </splitter>
 
 <constant>
 <number>403</number>
@@ -3160,9 +3184,11 @@
 <bits>8</bits>
 <xcoordinate>1050</xcoordinate>
 <ycoordinate>745</ycoordinate>
-<line 424>0:0</line>
+<line
+424>0:0
+</line>
 <line 445>0:0</line>
-</splitter>
+        </splitter>
 
 <bus>
 <number>420</number>
@@ -3382,8 +3408,10 @@
 <bits>16</bits>
 <xcoordinate>895</xcoordinate>
 <ycoordinate>280</ycoordinate>
-<line 450>15:8</line>
-</splitter>
+<line
+450>15:8
+</line>
+        </splitter>
 
 <bus>
 <number>450</number>
@@ -3415,9 +3443,11 @@
 <bits>16</bits>
 <xcoordinate>1145</xcoordinate>
 <ycoordinate>840</ycoordinate>
-<line 470>7:7</line>
+<line
+470>7:7
+</line>
 <line 484>4:4</line>
-</splitter>
+        </splitter>
 
 <bus>
 <number>469</number>
@@ -3657,9 +3687,11 @@
 <bits>16</bits>
 <xcoordinate>920</xcoordinate>
 <ycoordinate>440</ycoordinate>
-<line 525>7:0</line>
+<line
+525>7:0
+</line>
 <line 510>15:8</line>
-</joiner>
+        </joiner>
 
 <bus>
 <number>502</number>
@@ -3751,11 +3783,13 @@
 <bits>8</bits>
 <xcoordinate>935</xcoordinate>
 <ycoordinate>925</ycoordinate>
-<line 516>7:7</line>
+<line
+516>7:7
+</line>
 <line 514>4:4</line>
 <line 520>3:0</line>
 <line 519>6:5</line>
-</joiner>
+        </joiner>
 
 <bus>
 <number>513</number>
@@ -3963,9 +3997,11 @@
 <bits>16</bits>
 <xcoordinate>1330</xcoordinate>
 <ycoordinate>755</ycoordinate>
-<line 536>7:0</line>
+<line
+536>7:0
+</line>
 <line 533>15:8</line>
-</joiner>
+        </joiner>
 
 <bus>
 <number>533</number>
@@ -4129,9 +4165,11 @@
 <bits>16</bits>
 <xcoordinate>1335</xcoordinate>
 <ycoordinate>840</ycoordinate>
-<line 551>7:0</line>
+<line
+551>7:0
+</line>
 <line 550>15:8</line>
-</splitter>
+        </splitter>
 
 <bus>
 <number>548</number>
@@ -4381,5 +4419,5 @@
 <exit>4</exit>
 </bus>
 
-</processor>
+        </processor>
 

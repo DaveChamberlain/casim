@@ -1,105 +1,109 @@
 <processor>
 
-<register>
-<number>6</number>
-<name>register1</name>
-<bits>2</bits>
-<xcoordinate>216</xcoordinate>
-<ycoordinate>714</ycoordinate>
-<xcoordinate2>256</xcoordinate2>
-<ycoordinate2>744</ycoordinate2>
-<description></description>
-</register>
+    <register>
+        <number>6</number>
+        <name>register1</name>
+        <bits>2</bits>
+        <xcoordinate>216</xcoordinate>
+        <ycoordinate>714</ycoordinate>
+        <xcoordinate2>256</xcoordinate2>
+        <ycoordinate2>744</ycoordinate2>
+        <description></description>
+    </register>
 
-<combinational-adder>
-<number>7</number>
-<name>adder2</name>
-<bits>2</bits>
-<xcoordinate>312</xcoordinate>
-<ycoordinate>720</ycoordinate>
-<xcoordinate2>352</xcoordinate2>
-<ycoordinate2>735</ycoordinate2>
-<description></description>
-</combinational-adder>
+    <combinational-adder>
+        <number>7</number>
+        <name>adder2</name>
+        <bits>2</bits>
+        <xcoordinate>312</xcoordinate>
+        <ycoordinate>720</ycoordinate>
+        <xcoordinate2>352</xcoordinate2>
+        <ycoordinate2>735</ycoordinate2>
+        <description></description>
+    </combinational-adder>
 
-<input pin>
-<number>28</number>
-<name>direction</name>
-<bits>1</bits>
-<xcoordinate>459</xcoordinate>
-<ycoordinate>651</ycoordinate>
-<xcoordinate2>472</xcoordinate2>
-<ycoordinate2>661</ycoordinate2>
-<description></description>
-</input pin>
+    <input pin>
+        <number>28</number>
+        <name>direction</name>
+        <bits>1</bits>
+        <xcoordinate>459</xcoordinate>
+        <ycoordinate>651</ycoordinate>
+        <xcoordinate2>472</xcoordinate2>
+        <ycoordinate2>661</ycoordinate2>
+        <description></description>
+    </input pin>
 
-<multiplexor>
-<number>31</number>
-<name>multiplexor27</name>
-<bits>2</bits>
-<xcoordinate>516</xcoordinate>
-<ycoordinate>672</ycoordinate>
-<xcoordinate2>556</xcoordinate2>
-<ycoordinate2>687</ycoordinate2>
-<description></description>
-</multiplexor>
+    <multiplexor>
+        <number>31</number>
+        <name>multiplexor27</name>
+        <bits>2</bits>
+        <xcoordinate>516</xcoordinate>
+        <ycoordinate>672</ycoordinate>
+        <xcoordinate2>556</xcoordinate2>
+        <ycoordinate2>687</ycoordinate2>
+        <description></description>
+    </multiplexor>
 
-<constant>
-<number>32</number>
-<name>1</name>
-<bits>2</bits>
-<xcoordinate>513</xcoordinate>
-<ycoordinate>603</ycoordinate>
-<xcoordinate2>533</xcoordinate2>
-<ycoordinate2>618</ycoordinate2>
-<description></description>
-</constant>
+    <constant>
+        <number>32</number>
+        <name>1</name>
+        <bits>2</bits>
+        <xcoordinate>513</xcoordinate>
+        <ycoordinate>603</ycoordinate>
+        <xcoordinate2>533</xcoordinate2>
+        <ycoordinate2>618</ycoordinate2>
+        <description></description>
+    </constant>
 
-<constant>
-<number>33</number>
-<name>3</name>
-<bits>2</bits>
-<xcoordinate>537</xcoordinate>
-<ycoordinate>603</ycoordinate>
-<xcoordinate2>557</xcoordinate2>
-<ycoordinate2>618</ycoordinate2>
-<description></description>
-</constant>
+    <constant>
+        <number>33</number>
+        <name>3</name>
+        <bits>2</bits>
+        <xcoordinate>537</xcoordinate>
+        <ycoordinate>603</ycoordinate>
+        <xcoordinate2>557</xcoordinate2>
+        <ycoordinate2>618</ycoordinate2>
+        <description></description>
+    </constant>
 
-<register>
-<number>39</number>
-<name>register2</name>
-<bits>2</bits>
-<xcoordinate>210</xcoordinate>
-<ycoordinate>921</ycoordinate>
-<xcoordinate2>250</xcoordinate2>
-<ycoordinate2>951</ycoordinate2>
-<description></description>
-</register>
+    <register>
+        <number>39</number>
+        <name>register2</name>
+        <bits>2</bits>
+        <xcoordinate>210</xcoordinate>
+        <ycoordinate>921</ycoordinate>
+        <xcoordinate2>250</xcoordinate2>
+        <ycoordinate2>951</ycoordinate2>
+        <description></description>
+    </register>
 
-<input pin>
-<number>40</number>
-<name>direction</name>
-<bits>1</bits>
-<xcoordinate>339</xcoordinate>
-<ycoordinate>888</ycoordinate>
-<xcoordinate2>352</xcoordinate2>
-<ycoordinate2>898</ycoordinate2>
-<description></description>
-</input pin>
+    <input pin>
+        <number>40</number>
+        <name>direction</name>
+        <bits>1</bits>
+        <xcoordinate>339</xcoordinate>
+        <ycoordinate>888</ycoordinate>
+        <xcoordinate2>352</xcoordinate2>
+        <ycoordinate2>898</ycoordinate2>
+        <description></description>
+    </input pin>
 
-<splitter>
-<number>41</number>
-<name>splitter38</name>
-<bits>2</bits>
-<xcoordinate>210</xcoordinate>
-<ycoordinate>1002</ycoordinate>
-<xcoordinate2>250</xcoordinate2>
-<ycoordinate2>1012</ycoordinate2>
-<description></description>
-<line 46>0:0</line>
-<line 45>1:1</line>
-</splitter>
+    <splitter>
+        <number>41</number>
+        <name>splitter38</name>
+        <bits>2</bits>
+        <xcoordinate>210</xcoordinate>
+        <ycoordinate>1002</ycoordinate>
+        <xcoordinate2>250</xcoordinate2>
+        <ycoordinate2>1012</ycoordinate2>
+        <description></description>
+        <line
+        46>0:0
+    </line>
+    <line
+    45>1:1
+</line>
+        </splitter>
 
 <joiner>
 <number>42</number>
@@ -242,7 +246,9 @@
 <xcoordinate2>700</xcoordinate2>
 <ycoordinate2>876</ycoordinate2>
 <description></description>
-<value 7>2</value>
+<value
+7>2
+</value>
 <value 6>1</value>
 <value 5>0</value>
 <value 4>3</value>
@@ -250,7 +256,7 @@
 <value 2>3</value>
 <value 1>2</value>
 <value 0>1</value>
-</lookup table>
+        </lookup table>
 
 <input pin>
 <number>85</number>
@@ -1013,5 +1019,5 @@
 <exit>83</exit>
 </bus>
 
-</processor>
+        </processor>
 

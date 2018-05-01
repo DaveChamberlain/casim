@@ -1,109 +1,113 @@
 <processor>
 
-<memory>
-<number>7</number>
-<name>instruction memory</name>
-<bits>1</bits>
-<xcoordinate>681</xcoordinate>
-<ycoordinate>267</ycoordinate>
-<xcoordinate2>761</xcoordinate2>
-<ycoordinate2>297</ycoordinate2>
-<description></description>
-</memory>
+    <memory>
+        <number>7</number>
+        <name>instruction memory</name>
+        <bits>1</bits>
+        <xcoordinate>681</xcoordinate>
+        <ycoordinate>267</ycoordinate>
+        <xcoordinate2>761</xcoordinate2>
+        <ycoordinate2>297</ycoordinate2>
+        <description></description>
+    </memory>
 
-<register>
-<number>9</number>
-<name>program counter</name>
-<bits>1</bits>
-<xcoordinate>555</xcoordinate>
-<ycoordinate>237</ycoordinate>
-<xcoordinate2>630</xcoordinate2>
-<ycoordinate2>267</ycoordinate2>
-<description></description>
-</register>
+    <register>
+        <number>9</number>
+        <name>program counter</name>
+        <bits>1</bits>
+        <xcoordinate>555</xcoordinate>
+        <ycoordinate>237</ycoordinate>
+        <xcoordinate2>630</xcoordinate2>
+        <ycoordinate2>267</ycoordinate2>
+        <description></description>
+    </register>
 
-<combinational-adder>
-<number>12</number>
-<name>pcadder</name>
-<bits>1</bits>
-<xcoordinate>591</xcoordinate>
-<ycoordinate>171</ycoordinate>
-<xcoordinate2>631</xcoordinate2>
-<ycoordinate2>186</ycoordinate2>
-<description></description>
-</combinational-adder>
+    <combinational-adder>
+        <number>12</number>
+        <name>pcadder</name>
+        <bits>1</bits>
+        <xcoordinate>591</xcoordinate>
+        <ycoordinate>171</ycoordinate>
+        <xcoordinate2>631</xcoordinate2>
+        <ycoordinate2>186</ycoordinate2>
+        <description></description>
+    </combinational-adder>
 
-<multiplexor>
-<number>13</number>
-<name>pcInputSelect</name>
-<bits>1</bits>
-<xcoordinate>573</xcoordinate>
-<ycoordinate>204</ycoordinate>
-<xcoordinate2>643</xcoordinate2>
-<ycoordinate2>219</ycoordinate2>
-<description></description>
-</multiplexor>
+    <multiplexor>
+        <number>13</number>
+        <name>pcInputSelect</name>
+        <bits>1</bits>
+        <xcoordinate>573</xcoordinate>
+        <ycoordinate>204</ycoordinate>
+        <xcoordinate2>643</xcoordinate2>
+        <ycoordinate2>219</ycoordinate2>
+        <description></description>
+    </multiplexor>
 
-<constant>
-<number>16</number>
-<name>1</name>
-<bits>1</bits>
-<xcoordinate>585</xcoordinate>
-<ycoordinate>129</ycoordinate>
-<xcoordinate2>605</xcoordinate2>
-<ycoordinate2>144</ycoordinate2>
-<description>pcIncrement</description>
-</constant>
+    <constant>
+        <number>16</number>
+        <name>1</name>
+        <bits>1</bits>
+        <xcoordinate>585</xcoordinate>
+        <ycoordinate>129</ycoordinate>
+        <xcoordinate2>605</xcoordinate2>
+        <ycoordinate2>144</ycoordinate2>
+        <description>pcIncrement</description>
+    </constant>
 
-<label>
-<number>21</number>
-<name>Instruction Fetch Stage</name>
-<bits>1</bits>
-<xcoordinate>408</xcoordinate>
-<ycoordinate>111</ycoordinate>
-<xcoordinate2>508</xcoordinate2>
-<ycoordinate2>126</ycoordinate2>
-<description></description>
-</label>
+    <label>
+        <number>21</number>
+        <name>Instruction Fetch Stage</name>
+        <bits>1</bits>
+        <xcoordinate>408</xcoordinate>
+        <ycoordinate>111</ycoordinate>
+        <xcoordinate2>508</xcoordinate2>
+        <ycoordinate2>126</ycoordinate2>
+        <description></description>
+    </label>
 
-<register>
-<number>22</number>
-<name>instruction register</name>
-<bits>1</bits>
-<xcoordinate>681</xcoordinate>
-<ycoordinate>420</ycoordinate>
-<xcoordinate2>761</xcoordinate2>
-<ycoordinate2>450</ycoordinate2>
-<description></description>
-</register>
+    <register>
+        <number>22</number>
+        <name>instruction register</name>
+        <bits>1</bits>
+        <xcoordinate>681</xcoordinate>
+        <ycoordinate>420</ycoordinate>
+        <xcoordinate2>761</xcoordinate2>
+        <ycoordinate2>450</ycoordinate2>
+        <description></description>
+    </register>
 
-<register>
-<number>25</number>
-<name>opcode</name>
-<bits>1</bits>
-<xcoordinate>573</xcoordinate>
-<ycoordinate>534</ycoordinate>
-<xcoordinate2>613</xcoordinate2>
-<ycoordinate2>564</ycoordinate2>
-<description></description>
-</register>
+    <register>
+        <number>25</number>
+        <name>opcode</name>
+        <bits>1</bits>
+        <xcoordinate>573</xcoordinate>
+        <ycoordinate>534</ycoordinate>
+        <xcoordinate2>613</xcoordinate2>
+        <ycoordinate2>564</ycoordinate2>
+        <description></description>
+    </register>
 
-<splitter>
-<number>26</number>
-<name>instruction bits</name>
-<bits>1</bits>
-<xcoordinate>600</xcoordinate>
-<ycoordinate>504</ycoordinate>
-<xcoordinate2>850</xcoordinate2>
-<ycoordinate2>514</ycoordinate2>
-<description></description>
-<line 34>0:0</line>
-<line 89>0:0</line>
+    <splitter>
+        <number>26</number>
+        <name>instruction bits</name>
+        <bits>1</bits>
+        <xcoordinate>600</xcoordinate>
+        <ycoordinate>504</ycoordinate>
+        <xcoordinate2>850</xcoordinate2>
+        <ycoordinate2>514</ycoordinate2>
+        <description></description>
+        <line
+        34>0:0
+    </line>
+    <line
+    89>0:0
+</line>
 <line 271>0:0</line>
 <line 37>0:0</line>
 <line 38>0:0</line>
 <line 41>0:0</line>
-</splitter>
+        </splitter>
 
 <control>
 <number>28</number>
@@ -2964,5 +2968,5 @@
 <exit>178</exit>
 </bus>
 
-</processor>
+        </processor>
 

@@ -1,132 +1,136 @@
 <processor>
 
-<register>
-<number>1</number>
-<name>IR</name>
-<bits>8</bits>
-<xcoordinate>269</xcoordinate>
-<ycoordinate>176</ycoordinate>
-<xcoordinate2>309</xcoordinate2>
-<ycoordinate2>206</ycoordinate2>
-</register>
+    <register>
+        <number>1</number>
+        <name>IR</name>
+        <bits>8</bits>
+        <xcoordinate>269</xcoordinate>
+        <ycoordinate>176</ycoordinate>
+        <xcoordinate2>309</xcoordinate2>
+        <ycoordinate2>206</ycoordinate2>
+    </register>
 
-<register file>
-<number>4</number>
-<name>RF</name>
-<bits>8</bits>
-<xcoordinate>361</xcoordinate>
-<ycoordinate>322</ycoordinate>
-<xcoordinate2>401</xcoordinate2>
-<ycoordinate2>352</ycoordinate2>
-</register file>
+    <register file>
+        <number>4</number>
+        <name>RF</name>
+        <bits>8</bits>
+        <xcoordinate>361</xcoordinate>
+        <ycoordinate>322</ycoordinate>
+        <xcoordinate2>401</xcoordinate2>
+        <ycoordinate2>352</ycoordinate2>
+    </register file>
 
-<register>
-<number>5</number>
-<name>AIR</name>
-<bits>8</bits>
-<xcoordinate>454</xcoordinate>
-<ycoordinate>408</ycoordinate>
-<xcoordinate2>494</xcoordinate2>
-<ycoordinate2>438</ycoordinate2>
-</register>
+    <register>
+        <number>5</number>
+        <name>AIR</name>
+        <bits>8</bits>
+        <xcoordinate>454</xcoordinate>
+        <ycoordinate>408</ycoordinate>
+        <xcoordinate2>494</xcoordinate2>
+        <ycoordinate2>438</ycoordinate2>
+    </register>
 
-<register>
-<number>6</number>
-<name>AOR</name>
-<bits>8</bits>
-<xcoordinate>529</xcoordinate>
-<ycoordinate>525</ycoordinate>
-<xcoordinate2>569</xcoordinate2>
-<ycoordinate2>555</ycoordinate2>
-</register>
+    <register>
+        <number>6</number>
+        <name>AOR</name>
+        <bits>8</bits>
+        <xcoordinate>529</xcoordinate>
+        <ycoordinate>525</ycoordinate>
+        <xcoordinate2>569</xcoordinate2>
+        <ycoordinate2>555</ycoordinate2>
+    </register>
 
-<ALU>
-<number>7</number>
-<name>ALU</name>
-<bits>8</bits>
-<xcoordinate>476</xcoordinate>
-<ycoordinate>473</ycoordinate>
-<xcoordinate2>516</xcoordinate2>
-<ycoordinate2>503</ycoordinate2>
-</ALU>
+    <ALU>
+        <number>7</number>
+        <name>ALU</name>
+        <bits>8</bits>
+        <xcoordinate>476</xcoordinate>
+        <ycoordinate>473</ycoordinate>
+        <xcoordinate2>516</xcoordinate2>
+        <ycoordinate2>503</ycoordinate2>
+    </ALU>
 
-<register>
-<number>8</number>
-<name>PC</name>
-<bits>8</bits>
-<xcoordinate>611</xcoordinate>
-<ycoordinate>215</ycoordinate>
-<xcoordinate2>651</xcoordinate2>
-<ycoordinate2>245</ycoordinate2>
-</register>
+    <register>
+        <number>8</number>
+        <name>PC</name>
+        <bits>8</bits>
+        <xcoordinate>611</xcoordinate>
+        <ycoordinate>215</ycoordinate>
+        <xcoordinate2>651</xcoordinate2>
+        <ycoordinate2>245</ycoordinate2>
+    </register>
 
-<ALU>
-<number>9</number>
-<name>pcadder</name>
-<bits>8</bits>
-<xcoordinate>652</xcoordinate>
-<ycoordinate>288</ycoordinate>
-<xcoordinate2>692</xcoordinate2>
-<ycoordinate2>318</ycoordinate2>
-</ALU>
+    <ALU>
+        <number>9</number>
+        <name>pcadder</name>
+        <bits>8</bits>
+        <xcoordinate>652</xcoordinate>
+        <ycoordinate>288</ycoordinate>
+        <xcoordinate2>692</xcoordinate2>
+        <ycoordinate2>318</ycoordinate2>
+    </ALU>
 
-<constant>
-<number>10</number>
-<name>1</name>
-<bits>8</bits>
-<xcoordinate>683</xcoordinate>
-<ycoordinate>231</ycoordinate>
-<xcoordinate2>703</xcoordinate2>
-<ycoordinate2>246</ycoordinate2>
-</constant>
+    <constant>
+        <number>10</number>
+        <name>1</name>
+        <bits>8</bits>
+        <xcoordinate>683</xcoordinate>
+        <ycoordinate>231</ycoordinate>
+        <xcoordinate2>703</xcoordinate2>
+        <ycoordinate2>246</ycoordinate2>
+    </constant>
 
-<memory>
-<number>11</number>
-<name>memory</name>
-<bits>8</bits>
-<xcoordinate>742</xcoordinate>
-<ycoordinate>349</ycoordinate>
-<xcoordinate2>782</xcoordinate2>
-<ycoordinate2>379</ycoordinate2>
-</memory>
+    <memory>
+        <number>11</number>
+        <name>memory</name>
+        <bits>8</bits>
+        <xcoordinate>742</xcoordinate>
+        <ycoordinate>349</ycoordinate>
+        <xcoordinate2>782</xcoordinate2>
+        <ycoordinate2>379</ycoordinate2>
+    </memory>
 
-<multiplexor>
-<number>67</number>
-<name>memaddrmux</name>
-<bits>8</bits>
-<xcoordinate>664</xcoordinate>
-<ycoordinate>400</ycoordinate>
-<xcoordinate2>704</xcoordinate2>
-<ycoordinate2>415</ycoordinate2>
-</multiplexor>
+    <multiplexor>
+        <number>67</number>
+        <name>memaddrmux</name>
+        <bits>8</bits>
+        <xcoordinate>664</xcoordinate>
+        <ycoordinate>400</ycoordinate>
+        <xcoordinate2>704</xcoordinate2>
+        <ycoordinate2>415</ycoordinate2>
+    </multiplexor>
 
-<multiplexor>
-<number>83</number>
-<name>rfmux</name>
-<bits>8</bits>
-<xcoordinate>369</xcoordinate>
-<ycoordinate>272</ycoordinate>
-<xcoordinate2>409</xcoordinate2>
-<ycoordinate2>287</ycoordinate2>
-</multiplexor>
+    <multiplexor>
+        <number>83</number>
+        <name>rfmux</name>
+        <bits>8</bits>
+        <xcoordinate>369</xcoordinate>
+        <ycoordinate>272</ycoordinate>
+        <xcoordinate2>409</xcoordinate2>
+        <ycoordinate2>287</ycoordinate2>
+    </multiplexor>
 
-<splitter>
-<number>91</number>
-<name></name>
-<bits>8</bits>
-<xcoordinate>269</xcoordinate>
-<ycoordinate>216</ycoordinate>
-<xcoordinate2>309</xcoordinate2>
-<ycoordinate2>226</ycoordinate2>
-<line 164>5:4</line>
-<line 98>1:0</line>
+    <splitter>
+        <number>91</number>
+        <name></name>
+        <bits>8</bits>
+        <xcoordinate>269</xcoordinate>
+        <ycoordinate>216</ycoordinate>
+        <xcoordinate2>309</xcoordinate2>
+        <ycoordinate2>226</ycoordinate2>
+        <line
+        164>5:4
+    </line>
+    <line
+    98>1:0
+</line>
 <line 163>7:6</line>
 <line 184>5:4</line>
 <line 183>7:7</line>
 <line 94>7:4</line>
 <line 104>3:0</line>
 <line 101>3:2</line>
-</splitter>
+        </splitter>
 
 <control>
 <number>93</number>
@@ -186,8 +190,10 @@
 <ycoordinate>612</ycoordinate>
 <xcoordinate2>541</xcoordinate2>
 <ycoordinate2>622</ycoordinate2>
-<line 138>0:0</line>
-</splitter>
+<line
+138>0:0
+</line>
+        </splitter>
 
 <control>
 <number>137</number>
@@ -237,9 +243,11 @@
 <ycoordinate>152</ycoordinate>
 <xcoordinate2>532</xcoordinate2>
 <ycoordinate2>162</ycoordinate2>
-<line 175>7:4</line>
+<line
+175>7:4
+</line>
 <line 178>3:0</line>
-</splitter>
+        </splitter>
 
 <output pin>
 <number>187</number>
@@ -1695,5 +1703,5 @@
 <exit>194</exit>
 </bus>
 
-</processor>
+        </processor>
 

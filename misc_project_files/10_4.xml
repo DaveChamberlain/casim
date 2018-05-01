@@ -1,85 +1,89 @@
 <processor>
 
-<input pin>
-<number>1</number>
-<name>c</name>
-<bits>1</bits>
-<xcoordinate>159</xcoordinate>
-<ycoordinate>687</ycoordinate>
-<xcoordinate2>172</xcoordinate2>
-<ycoordinate2>697</ycoordinate2>
-<description></description>
-</input pin>
+    <input pin>
+        <number>1</number>
+        <name>c</name>
+        <bits>1</bits>
+        <xcoordinate>159</xcoordinate>
+        <ycoordinate>687</ycoordinate>
+        <xcoordinate2>172</xcoordinate2>
+        <ycoordinate2>697</ycoordinate2>
+        <description></description>
+    </input pin>
 
-<input pin>
-<number>2</number>
-<name>r</name>
-<bits>1</bits>
-<xcoordinate>264</xcoordinate>
-<ycoordinate>687</ycoordinate>
-<xcoordinate2>277</xcoordinate2>
-<ycoordinate2>697</ycoordinate2>
-<description></description>
-</input pin>
+    <input pin>
+        <number>2</number>
+        <name>r</name>
+        <bits>1</bits>
+        <xcoordinate>264</xcoordinate>
+        <ycoordinate>687</ycoordinate>
+        <xcoordinate2>277</xcoordinate2>
+        <ycoordinate2>697</ycoordinate2>
+        <description></description>
+    </input pin>
 
-<input pin>
-<number>3</number>
-<name>n</name>
-<bits>1</bits>
-<xcoordinate>354</xcoordinate>
-<ycoordinate>684</ycoordinate>
-<xcoordinate2>367</xcoordinate2>
-<ycoordinate2>694</ycoordinate2>
-<description></description>
-</input pin>
+    <input pin>
+        <number>3</number>
+        <name>n</name>
+        <bits>1</bits>
+        <xcoordinate>354</xcoordinate>
+        <ycoordinate>684</ycoordinate>
+        <xcoordinate2>367</xcoordinate2>
+        <ycoordinate2>694</ycoordinate2>
+        <description></description>
+    </input pin>
 
-<input pin>
-<number>4</number>
-<name>d</name>
-<bits>1</bits>
-<xcoordinate>435</xcoordinate>
-<ycoordinate>684</ycoordinate>
-<xcoordinate2>448</xcoordinate2>
-<ycoordinate2>694</ycoordinate2>
-<description></description>
-</input pin>
+    <input pin>
+        <number>4</number>
+        <name>d</name>
+        <bits>1</bits>
+        <xcoordinate>435</xcoordinate>
+        <ycoordinate>684</ycoordinate>
+        <xcoordinate2>448</xcoordinate2>
+        <ycoordinate2>694</ycoordinate2>
+        <description></description>
+    </input pin>
 
-<register>
-<number>5</number>
-<name>state1</name>
-<bits>1</bits>
-<xcoordinate>507</xcoordinate>
-<ycoordinate>714</ycoordinate>
-<xcoordinate2>547</xcoordinate2>
-<ycoordinate2>744</ycoordinate2>
-<description></description>
-</register>
+    <register>
+        <number>5</number>
+        <name>state1</name>
+        <bits>1</bits>
+        <xcoordinate>507</xcoordinate>
+        <ycoordinate>714</ycoordinate>
+        <xcoordinate2>547</xcoordinate2>
+        <ycoordinate2>744</ycoordinate2>
+        <description></description>
+    </register>
 
-<register>
-<number>6</number>
-<name>state0</name>
-<bits>1</bits>
-<xcoordinate>561</xcoordinate>
-<ycoordinate>714</ycoordinate>
-<xcoordinate2>601</xcoordinate2>
-<ycoordinate2>744</ycoordinate2>
-<description></description>
-</register>
+    <register>
+        <number>6</number>
+        <name>state0</name>
+        <bits>1</bits>
+        <xcoordinate>561</xcoordinate>
+        <ycoordinate>714</ycoordinate>
+        <xcoordinate2>601</xcoordinate2>
+        <ycoordinate2>744</ycoordinate2>
+        <description></description>
+    </register>
 
-<lookup table>
-<number>7</number>
-<name>lookup table7</name>
-<bits>2</bits>
-<xcoordinate>411</xcoordinate>
-<ycoordinate>867</ycoordinate>
-<xcoordinate2>451</xcoordinate2>
-<ycoordinate2>897</ycoordinate2>
-<description></description>
-<value 4>0</value>
-<value 2>1</value>
+    <lookup table>
+        <number>7</number>
+        <name>lookup table7</name>
+        <bits>2</bits>
+        <xcoordinate>411</xcoordinate>
+        <ycoordinate>867</ycoordinate>
+        <xcoordinate2>451</xcoordinate2>
+        <ycoordinate2>897</ycoordinate2>
+        <description></description>
+        <value
+        4>0
+    </value>
+    <value
+    2>1
+</value>
 <value 1>2</value>
 <value 0>0</value>
-</lookup table>
+        </lookup table>
 
 <joiner>
 <number>8</number>
@@ -101,9 +105,11 @@
 <xcoordinate2>454</xcoordinate2>
 <ycoordinate2>925</ycoordinate2>
 <description></description>
-<line 31>1:1</line>
+<line
+31>1:1
+</line>
 <line 29>0:0</line>
-</splitter>
+        </splitter>
 
 <bus>
 <number>9</number>
@@ -508,5 +514,5 @@
 <exit>5</exit>
 </bus>
 
-</processor>
+        </processor>
 
