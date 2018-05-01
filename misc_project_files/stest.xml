@@ -1,57 +1,61 @@
 <processor>
 
-<register>
-<number>1</number>
-<name>register1</name>
-<bits>8</bits>
-<xcoordinate>75</xcoordinate>
-<ycoordinate>189</ycoordinate>
-<xcoordinate2>115</xcoordinate2>
-<ycoordinate2>219</ycoordinate2>
-</register>
+    <register>
+        <number>1</number>
+        <name>register1</name>
+        <bits>8</bits>
+        <xcoordinate>75</xcoordinate>
+        <ycoordinate>189</ycoordinate>
+        <xcoordinate2>115</xcoordinate2>
+        <ycoordinate2>219</ycoordinate2>
+    </register>
 
-<register>
-<number>2</number>
-<name>register2</name>
-<bits>8</bits>
-<xcoordinate>243</xcoordinate>
-<ycoordinate>192</ycoordinate>
-<xcoordinate2>283</xcoordinate2>
-<ycoordinate2>222</ycoordinate2>
-</register>
+    <register>
+        <number>2</number>
+        <name>register2</name>
+        <bits>8</bits>
+        <xcoordinate>243</xcoordinate>
+        <ycoordinate>192</ycoordinate>
+        <xcoordinate2>283</xcoordinate2>
+        <ycoordinate2>222</ycoordinate2>
+    </register>
 
-<register>
-<number>3</number>
-<name>register3</name>
-<bits>8</bits>
-<xcoordinate>441</xcoordinate>
-<ycoordinate>192</ycoordinate>
-<xcoordinate2>481</xcoordinate2>
-<ycoordinate2>222</ycoordinate2>
-</register>
+    <register>
+        <number>3</number>
+        <name>register3</name>
+        <bits>8</bits>
+        <xcoordinate>441</xcoordinate>
+        <ycoordinate>192</ycoordinate>
+        <xcoordinate2>481</xcoordinate2>
+        <ycoordinate2>222</ycoordinate2>
+    </register>
 
-<register>
-<number>4</number>
-<name>register4</name>
-<bits>16</bits>
-<xcoordinate>237</xcoordinate>
-<ycoordinate>36</ycoordinate>
-<xcoordinate2>277</xcoordinate2>
-<ycoordinate2>66</ycoordinate2>
-</register>
+    <register>
+        <number>4</number>
+        <name>register4</name>
+        <bits>16</bits>
+        <xcoordinate>237</xcoordinate>
+        <ycoordinate>36</ycoordinate>
+        <xcoordinate2>277</xcoordinate2>
+        <ycoordinate2>66</ycoordinate2>
+    </register>
 
-<splitter>
-<number>5</number>
-<name>splitter5</name>
-<bits>16</bits>
-<xcoordinate>159</xcoordinate>
-<ycoordinate>102</ycoordinate>
-<xcoordinate2>359</xcoordinate2>
-<ycoordinate2>112</ycoordinate2>
-<line 7>15:8</line>
-<line 8>12:5</line>
+    <splitter>
+        <number>5</number>
+        <name>splitter5</name>
+        <bits>16</bits>
+        <xcoordinate>159</xcoordinate>
+        <ycoordinate>102</ycoordinate>
+        <xcoordinate2>359</xcoordinate2>
+        <ycoordinate2>112</ycoordinate2>
+        <line
+        7>15:8
+    </line>
+    <line
+    8>12:5
+</line>
 <line 9>7:0</line>
-</splitter>
+        </splitter>
 
 <joiner>
 <number>16</number>
@@ -315,5 +319,5 @@
 <exit>4</exit>
 </bus>
 
-</processor>
+        </processor>
 
