@@ -393,7 +393,7 @@ public class FileTransferGUI extends AbstractGUI {
         if (computer.registerGUI == null)
             computer.registerGUI = new RegisterGUI(computer);
 /*		if (computer.memoryGUI==null) 
-			computer.memoryGUI=new MemoryGUI(computer);
+            computer.memoryGUI=new MemoryGUI(computer);
 		computer.memoryGUI.codeFrame=new MemoryBlockGUI(computer,MemoryBlockGUI.CODE,computer.processor.cs.address(computer.processor.eip.getValue()));
 		*/
     }

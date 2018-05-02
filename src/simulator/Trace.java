@@ -285,7 +285,7 @@ public class Trace extends AbstractGUI {
         for (String b : entry.instructionBytes)
             dump += (b + " ");
 /*			dump+=("Instruction codes: ");
-			for (int i=0; i<entry.processorCodeName.size() && i<10; i++)
+            for (int i=0; i<entry.processorCodeName.size() && i<10; i++)
 				dump+=(entry.processorCodeName.get(i)+" ");
 			for (int i=0; i<entry.processorCodeValue.size() && i<10; i++)
 				dump+=(entry.processorCodeValue.get(i)+" ");*/

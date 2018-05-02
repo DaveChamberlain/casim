@@ -524,7 +524,7 @@ public class ToArduino {
             v += "table[" + number + "]=memory[" + number + "][" + tablestring(Integer.parseInt(a)) + "];\n";
         }
 /*		else if (type.equals("lookup table"))
-		{
+        {
 			headerCode.append("int memory["+number+"][]={");
 			for(int i=0; i<busMasks.get(Integer.parseInt(a))+1; i++)
 			{

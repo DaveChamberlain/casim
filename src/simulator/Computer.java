@@ -344,7 +344,7 @@ public class Computer {
 
 
 /*		if (registerGUI!=null)
-		{
+        {
 			if (debugMode || updateGUIOnPlay)
 				processor.printRegisters();
 		}

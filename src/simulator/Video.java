@@ -1372,7 +1372,7 @@ public class Video extends IODevice {
 			computer.computerGUI.addComponent(videocomponent);*/
     }
 /*	public class VideoComponent extends JComponent
-	{
+    {
 		public void paintComponent(Graphics g)
 		{
 			g.setColor(Color.BLACK);

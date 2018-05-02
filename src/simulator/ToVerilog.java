@@ -475,7 +475,7 @@ public class ToVerilog {
             registerblocksBitsList.add(bits);
         }
 /*		else if (type.equals("lookup table"))
-		{
+        {
 			headerCode.append("int memory["+number+"][]={");
 			for(int i=0; i<busMasks.get(Integer.parseInt(a))+1; i++)
 			{

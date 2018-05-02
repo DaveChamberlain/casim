@@ -504,7 +504,7 @@ public class ComputerGUI {
 
         public void paintComponent(Graphics g) {
 /*				// paint motherboard vector
-				File imgpath = new File("Motherboard2.png");
+                File imgpath = new File("Motherboard2.png");
 				try {
 					Image motherboardimg = ImageIO.read(imgpath);
 					g.drawImage(motherboardimg, 0, 0, null);

@@ -400,7 +400,7 @@ public class InterruptController extends IODevice {
             if (priority == 8) {
                 return -1;
             }
-	    /* compute current priority. If special fully nested mode on
+        /* compute current priority. If special fully nested mode on
 	       the master, the IRQ coming from the slave is not taken into
 	       account for the priority computation. */
             mask = interruptServiceRegister;

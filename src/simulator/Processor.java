@@ -265,7 +265,7 @@ public class Processor {
         setCR3(0);
         setCR4(0);
 /*	cr0.setValue(0x60000010);
-	cr2.setValue(0);
+    cr2.setValue(0);
 	cr3.setValue(0);
 	cr4.setValue(0);*/
 
