@@ -13,7 +13,7 @@ import java.awt.Toolkit;
 import java.beans.PropertyVetoException;
 import java.io.*;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Computer {
     private static final int NICE_INTERVAL = 1000;  //pause for 1ms every n cycles so as not to overload the computer
@@ -270,45 +270,45 @@ public class Computer {
         serialport = new SerialPort(this);
         video = new Video(this);
 
-        if (!bootgui.memoryImage.equals("")) {
-            try {
-                MemoryTransferGUI.load(bootgui.memoryImage, bootgui.memoryImageStart, this);
-            } catch (NullPointerException e) {
-                System.out.println("Error loading memory image");
-            }
-        }
+		if (!bootgui.memoryImage.equals(""))
+		{
+			try {
+				MemoryTransferGUI.load(bootgui.memoryImage, bootgui.memoryImageStart, this);
+			} catch (NullPointerException e) {
+				final JPanel panel = new JPanel();
 
-        if (!bootgui.datapathxml.equals("")) {
-            datapathBuilder = new DatapathBuilder(this);
-            datapathBuilder.doload(bootgui.datapathxml, datapathBuilder.defaultModule);
-            if (!bootgui.controlxml.equals("")) {
-                controlBuilder = new ControlBuilder(this, datapathBuilder.defaultModule);
-                controlBuilder.clear();
-                ControlBuilder.doload(bootgui.controlxml, controlBuilder.defaultControl);
-                if (bootgui.bootCustomProcessor) {
-                    customProcessor = new CustomProcessor(this);
-                }
-            }
-        }
-        if (!bootgui.bootCustomProcessor) {
-            memoryGUI = new MemoryGUI(this);
-            keyboardGUI = new KeyboardGUI(this);
-            videoGUI = new VideoGUI(this);
-            ioGUI = new IOGUI(this);
-            try {
-                memoryGUI.setIcon(true);
-            } catch (PropertyVetoException e) {
-            }
-            try {
-                keyboardGUI.setIcon(true);
-            } catch (PropertyVetoException e) {
-            }
-            try {
-                ioGUI.setIcon(true);
-            } catch (PropertyVetoException e) {
-            }
-            keyboardGUI.setVisible(false);
-            ioGUI.setVisible(false);
+				JOptionPane.showMessageDialog(panel, "Memory could not be loaded. Check your file path: " +
+								bootgui.memoryImage, "Warning",
+						JOptionPane.WARNING_MESSAGE);
+			}
+		}
+		
+		if (!bootgui.datapathxml.equals(""))
+		{
+			datapathBuilder=new DatapathBuilder(this);
+			datapathBuilder.doload(bootgui.datapathxml, datapathBuilder.defaultModule);
+			if (!bootgui.controlxml.equals(""))
+			{
+				controlBuilder=new ControlBuilder(this,datapathBuilder.defaultModule);
+				controlBuilder.clear();
+				ControlBuilder.doload(bootgui.controlxml,controlBuilder.defaultControl);
+				if (bootgui.bootCustomProcessor)
+				{
+					customProcessor=new CustomProcessor(this);
+				}
+			}
+		}
+		if (!bootgui.bootCustomProcessor)
+		{
+			memoryGUI=new MemoryGUI(this);
+			keyboardGUI=new KeyboardGUI(this);
+			videoGUI=new VideoGUI(this);
+			ioGUI=new IOGUI(this);
+			try { memoryGUI.setIcon(true); } catch (PropertyVetoException e) {}
+			try { keyboardGUI.setIcon(true); } catch (PropertyVetoException e) {}
+			try { ioGUI.setIcon(true); } catch (PropertyVetoException e) {}
+			keyboardGUI.setVisible(false);
+			ioGUI.setVisible(false);
 
         } else {
             if (datapathBuilder == null)
